@@ -14,6 +14,8 @@ jobs:
       - name: Usando variáveis
         run: |
           echo "Olá, $NOME_VAR!"
-          echo "repository variable : ${{ vars.REPOSITORY_VAR }}"
+          echo "repository variable: ${{ vars.REPOSITORY_VAR }}"
+          echo "Test secrets: $SUPER_SECRETO"
         env:
           NOME_VAR: ${{ vars.NOME }}
+          SUPER_SECRETO: ${{ secrets.TOKEN }}
