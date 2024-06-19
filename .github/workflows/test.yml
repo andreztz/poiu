@@ -1,0 +1,13 @@
+---
+name: Primeiro fluxo de trabalho
+on:
+  push:
+    branches:
+      - 'main'
+  workflow_dispatch:
+
+jobs:
+  primeiro_fluxo_de_trabalho:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Olá, Mundo!"
