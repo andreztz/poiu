@@ -22,6 +22,8 @@ jobs:
           pip install
           uv
           --user
+      - name: Clear dist/ directory
+        run: rm -rf dist/
       - name: Build a binary wheel and a source tarball
         run: uv build
       - name: Store the distribution packages
