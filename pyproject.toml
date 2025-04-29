@@ -21,6 +21,11 @@ dependencies = [
   "click",
 ]
 
+[dependency-groups]
+dev = [
+    "rust-just>=1.40.0",
+]
+
 [project.urls]
 Documentation = "https://github.com/André P. Santos/poiu#readme"
 Issues = "https://github.com/André P. Santos/poiu/issues"
@@ -32,5 +37,3 @@ poiu = "poiu.cli:poiu"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
-
-
